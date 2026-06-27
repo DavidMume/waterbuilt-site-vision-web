@@ -28,7 +28,7 @@ export const translations = {
     summary: {
       kicker: 'Executive summary',
       title: 'Camera footage into structured safety decisions',
-      body: 'WaterBuilt Site Vision is an always-on AI safety monitor for construction sites. It captures camera frames on a schedule, analyses each image against a 16-item compliance checklist using Claude Vision, classifies overall risk, generates a PDF audit report, logs everything to SQLite, and dispatches webhook alerts to n8n when risk reaches a threshold.',
+      body: 'SiteGuard Vision is an always-on AI safety monitor for construction sites. It captures camera frames on a schedule, analyses each image against a 16-item compliance checklist using Claude Vision, classifies overall risk, generates a PDF audit report, logs everything to SQLite, and dispatches webhook alerts to n8n when risk reaches a threshold.',
       steps: [
         { label: 'Capture', detail: 'OpenCV grabs a frame from a webcam, IP camera, RTSP stream, or image folder every N minutes.' },
         { label: 'Analyse', detail: 'The frame is sent to Claude Vision (claude-sonnet-4-5). A structured prompt returns a JSON compliance assessment.' },
@@ -137,7 +137,7 @@ export const translations = {
         model:   'AI model',
         provider:'Vision provider',
         actions: 'Immediate actions required',
-        disclaimer: 'This report was generated automatically by WaterBuilt Site Vision AI. It is not a substitute for physical inspection by a qualified safety officer. All findings must be verified on-site.',
+        disclaimer: 'This report was generated automatically by SiteGuard Vision AI. It is not a substitute for physical inspection by a qualified safety officer. All findings must be verified on-site.',
       },
       sampleValues: {
         project: 'Sample Site — Demo',
@@ -223,7 +223,7 @@ export const translations = {
       name: 'Juan David Muñoz Mendivelso',
       handle: 'DavidMume',
       role: 'Data journalist · Developer · Brisbane, Australia',
-      bio: 'I build tools at the intersection of AI, data and real-world systems. WaterBuilt Site Vision explores how computer vision can support construction safety compliance at scale.',
+      bio: 'I build tools at the intersection of AI, data and real-world systems. SiteGuard Vision explores how computer vision can support construction safety compliance at scale.',
       linkGithub: 'GitHub profile',
       linkPortfolio: 'Portfolio',
     },
@@ -263,7 +263,7 @@ export const translations = {
     summary: {
       kicker: 'Resumen ejecutivo',
       title: 'De imágenes de cámara a decisiones de seguridad estructuradas',
-      body: 'WaterBuilt Site Vision es un monitor de seguridad de IA siempre activo para obras de construcción. Captura fotogramas de cámara en un horario, analiza cada imagen frente a una lista de verificación de 16 ítems usando Claude Vision, clasifica el riesgo general, genera un reporte PDF de auditoría, registra todo en SQLite y envía alertas vía webhook a n8n cuando el riesgo supera el umbral.',
+      body: 'SiteGuard Vision es un monitor de seguridad de IA siempre activo para obras de construcción. Captura fotogramas de cámara en un horario, analiza cada imagen frente a una lista de verificación de 16 ítems usando Claude Vision, clasifica el riesgo general, genera un reporte PDF de auditoría, registra todo en SQLite y envía alertas vía webhook a n8n cuando el riesgo supera el umbral.',
       steps: [
         { label: 'Captura',     detail: 'OpenCV toma un fotograma de una cámara web, IP, flujo RTSP o carpeta de imágenes cada N minutos.' },
         { label: 'Análisis',    detail: 'El fotograma se envía a Claude Vision (claude-sonnet-4-5). Un prompt estructurado devuelve una evaluación JSON de cumplimiento.' },
@@ -372,7 +372,7 @@ export const translations = {
         model:   'Modelo IA',
         provider:'Proveedor de visión',
         actions: 'Acciones inmediatas requeridas',
-        disclaimer: 'Este reporte fue generado automáticamente por WaterBuilt Site Vision IA. No sustituye la inspección física de un inspector de seguridad calificado. Todos los hallazgos deben verificarse en obra.',
+        disclaimer: 'Este reporte fue generado automáticamente por SiteGuard Vision IA. No sustituye la inspección física de un inspector de seguridad calificado. Todos los hallazgos deben verificarse en obra.',
       },
       sampleValues: {
         project: 'Sitio de muestra — Demo',
@@ -458,7 +458,7 @@ export const translations = {
       name: 'Juan David Muñoz Mendivelso',
       handle: 'DavidMume',
       role: 'Periodista de datos · Desarrollador · Brisbane, Australia',
-      bio: 'Construyo herramientas en la intersección de IA, datos y sistemas del mundo real. WaterBuilt Site Vision explora cómo la visión artificial puede apoyar el cumplimiento de seguridad en obras a escala.',
+      bio: 'Construyo herramientas en la intersección de IA, datos y sistemas del mundo real. SiteGuard Vision explora cómo la visión artificial puede apoyar el cumplimiento de seguridad en obras a escala.',
       linkGithub: 'Perfil de GitHub',
       linkPortfolio: 'Portafolio',
     },

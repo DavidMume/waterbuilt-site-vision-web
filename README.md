@@ -1,23 +1,23 @@
-# WaterBuilt Site Vision — Project Page
+# SiteGuard Vision — Project Page
 
-Interactive portfolio case study for [WaterBuilt Site Vision](https://github.com/DavidMume/waterbuilt-site-vision), an always-on AI construction site safety monitor.
+Interactive portfolio case study for [SiteGuard Vision](https://github.com/DavidMume/waterbuilt-site-vision), an AI-powered construction site safety monitor.
 
-> **Portfolio project page.** This is the landing page / case study, not the Python service itself. The Python service lives at the repo above.
+> **Portfolio project page.** This is the landing page / case study, not the Python service itself. The Python service (camera capture, Claude Vision analysis, PDF generation, n8n alerts) lives in the repository linked above.
 
 ---
 
 ## What this page covers
 
-- Cinematic hero with animated construction-site camera feed
-- 7-step pipeline walkthrough (camera → AI → checklist → risk → PDF → SQLite → n8n)
-- 16-item compliance checklist with status/severity breakdown (demo data)
-- Simulated AI vision overlay with detection boxes
-- Risk scoring dashboard (demo KPI cards)
+- Cinematic dark hero with animated construction-site camera feed
+- 7-step pipeline: camera → AI analysis → checklist scoring → risk classification → PDF report → SQLite log → n8n alert
+- 16-item compliance checklist with status/severity grid (demo data)
+- Simulated AI vision overlay with detection bounding boxes
+- Risk scoring dashboard (KPI cards, clearly marked as demo)
 - PDF audit report mockup
-- n8n webhook alert workflow
-- System architecture breakdown
-- Technology stack
-- Business/safety value case
+- n8n webhook alert workflow diagram
+- System architecture breakdown (5 layers)
+- Technology stack cards
+- Business and safety value case
 - Limitations and honest notes
 - Bilingual ES / EN throughout
 
@@ -26,7 +26,6 @@ Interactive portfolio case study for [WaterBuilt Site Vision](https://github.com
 ## Stack
 
 - **React 18** + **TypeScript** + **Vite 5** + **Tailwind CSS 3**
-- **Framer Motion** (animations) + **Lenis** (smooth scroll)
 - **Lucide React** (icons)
 - Bilingual system via `src/i18n/translations.ts`
 
@@ -55,47 +54,65 @@ npm run preview   # preview production build locally
 
 ## Edit bilingual content
 
-All translatable strings are in one file:
+All translatable strings — including demo data — live in a single file:
 
 ```
 src/i18n/translations.ts
 ```
 
-The file exports a `translations` object with `en` and `es` keys containing the full content tree. Edit either key to update the corresponding language.
+The file exports a `translations` object with `en` and `es` keys. Edit either key to update the corresponding language. Search for these keys to find specific sections:
+
+| Section | Key |
+|---|---|
+| Hero | `hero` |
+| Executive summary | `summary` |
+| Pipeline steps | `pipeline.nodes` |
+| Compliance checklist | `checklist.categories` |
+| AI vision detections | `vision.detections` |
+| Dashboard KPIs | `dashboard.kpis` |
+| PDF sample values | `pdf.sampleValues` |
+| n8n payload | `n8n.payload` |
+| Architecture layers | `architecture.layers` |
+| Tech stack | `stack.items` |
+| Limitations | `limitations.items` |
 
 ---
 
 ## Update demo data
 
-Demo values (KPI placeholders, checklist statuses, detection boxes, PDF sample values) are embedded in `src/i18n/translations.ts` alongside the UI copy. Search for `demoNote`, `demoLabel`, `kpis`, `categories`, or `sampleValues` in that file.
+Demo values (KPI placeholders, checklist statuses, detection boxes, PDF sample values) are embedded in `src/i18n/translations.ts` alongside the UI copy. They are clearly marked with `demoNote`, `demoLabel`, or `Demo data` labels in the UI.
+
+---
+
+## Add/update in the main portfolio index
+
+In the main portfolio project, open `src/data/projects.js` and find the entry with `slug: 'waterbuilt-site-vision'`. The `liveUrl` should point to:
+
+```
+https://siteguard-vision.pages.dev
+```
 
 ---
 
 ## Deploy to Cloudflare Pages
 
-1. Push to GitHub
+1. Push this repository to GitHub
 2. Go to [Cloudflare Pages](https://pages.cloudflare.com) → Create application → Pages → Connect to Git
-3. Select `waterbuilt-site-vision-web`
+3. Select the repository
 4. Build settings:
    - **Build command:** `npm run build`
    - **Output directory:** `dist`
-   - **Node.js version:** 18 (set `NODE_VERSION=18` in environment variables)
+   - **Node.js version:** 18 (add `NODE_VERSION=18` to environment variables)
 5. Deploy
 
 Every push to `main` triggers an automatic redeploy.
 
 ---
 
-## Add to portfolio index
-
-In the main portfolio project, open `src/data/projects.js` and find the entry with `slug: 'waterbuilt-site-vision'`. Update `liveUrl` with the Cloudflare Pages URL once deployed.
-
----
-
 ## Project structure
 
 ```
-waterbuilt-site-vision-web/
+waterbuilt-site-vision-web/    ← folder name (repo slug kept for continuity)
 ├── index.html
 ├── package.json
 ├── tailwind.config.js
@@ -109,14 +126,14 @@ waterbuilt-site-vision-web/
     │   └── translations.ts        ← all bilingual content + demo data
     └── components/
         ├── Navbar.tsx
-        ├── Hero.tsx               ← animated crane silhouettes + camera feed
+        ├── Hero.tsx
         ├── Summary.tsx
-        ├── Pipeline.tsx           ← animated 7-node pipeline diagram
-        ├── Checklist.tsx          ← 16-item compliance checklist grid
-        ├── VisionDemo.tsx         ← simulated AI vision overlay
-        ├── Dashboard.tsx          ← KPI cards (demo data)
-        ├── PDFPreview.tsx         ← PDF report mockup
-        ├── N8nSection.tsx         ← webhook alert flow
+        ├── Pipeline.tsx
+        ├── Checklist.tsx
+        ├── VisionDemo.tsx
+        ├── Dashboard.tsx
+        ├── PDFPreview.tsx
+        ├── N8nSection.tsx
         ├── Architecture.tsx
         ├── TechStack.tsx
         ├── WhyItMatters.tsx
@@ -129,12 +146,12 @@ waterbuilt-site-vision-web/
 
 ## Disclaimer
 
-This page describes a portfolio prototype. WaterBuilt Site Vision is not:
+This page describes a portfolio prototype. SiteGuard Vision is not:
 - Certified safety infrastructure
 - Approved for use as primary emergency communication
-- A replacement for qualified physical inspections
+- A replacement for qualified physical inspections or certified safety management systems
 
-Numerical claims are illustrative demo placeholders.
+Numerical claims shown are illustrative demo placeholders.
 
 ---
 

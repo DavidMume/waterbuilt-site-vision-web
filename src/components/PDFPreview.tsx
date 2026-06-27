@@ -27,7 +27,7 @@ export default function PDFPreview({ t }: Props) {
               {/* PDF header bar */}
               <div className="flex items-center gap-3 px-5 py-3 border-b border-zinc-200" style={{ background: '#1a1a1a' }}>
                 <FileText size={14} className="text-white" />
-                <span className="text-xs font-mono text-zinc-300">WaterBuilt Site Vision — Audit Report</span>
+                <span className="text-xs font-mono text-zinc-300">SiteGuard Vision — Audit Report</span>
                 <span className="ml-auto text-[10px] font-mono text-zinc-500">PDF · ReportLab</span>
               </div>
 
@@ -35,7 +35,7 @@ export default function PDFPreview({ t }: Props) {
                 {/* Report header */}
                 <div className="flex items-start justify-between mb-6 pb-6 border-b border-zinc-200">
                   <div>
-                    <p className="text-xs font-mono text-zinc-500 uppercase tracking-widest mb-1">WaterBuilt Site Vision</p>
+                    <p className="text-xs font-mono text-zinc-500 uppercase tracking-widest mb-1">SiteGuard Vision</p>
                     <h3 className="font-serif text-2xl font-bold text-zinc-900 mb-1">Safety Audit Report</h3>
                     <p className="text-xs text-zinc-500">{v.date} · {v.time}</p>
                   </div>

@@ -14,8 +14,8 @@ export default function Navbar({ t, lang, setLanguage }: Props) {
         {/* Brand */}
         <a href="#top" className="flex items-center gap-2 shrink-0 mr-4">
           <Eye size={16} className="text-signal" />
-          <span className="text-sm font-semibold text-white hidden sm:inline">WaterBuilt</span>
-          <span className="text-sm font-semibold text-signal hidden sm:inline">Site Vision</span>
+          <span className="text-sm font-semibold text-white hidden sm:inline">SiteGuard</span>
+          <span className="text-sm font-semibold text-signal hidden sm:inline">Vision</span>
         </a>
 
         {/* Nav links */}
