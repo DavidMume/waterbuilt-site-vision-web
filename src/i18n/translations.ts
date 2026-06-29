@@ -14,7 +14,7 @@ export const translations = {
       portfolio: 'Portfolio',
     },
     hero: {
-      kicker: 'Portfolio prototype · AI Computer Vision · Construction Safety',
+      kicker: 'SiteGuard Vision · Portfolio prototype · AI Computer Vision · Construction Safety',
       title: 'AI vision for construction site safety monitoring',
       subtitle: 'A prototype that captures site images, evaluates compliance with Claude Vision, generates PDF reports and triggers automated n8n alerts.',
       ctaExplore: 'Explore architecture',
@@ -249,7 +249,7 @@ export const translations = {
       portfolio: 'Portafolio',
     },
     hero: {
-      kicker: 'Prototipo de portafolio · Visión artificial · Seguridad en construcción',
+      kicker: 'SiteGuard Vision · Prototipo de portafolio · Visión artificial · Seguridad en construcción',
       title: 'Visión artificial para monitorear seguridad en obras',
       subtitle: 'Un prototipo que captura imágenes de obra, evalúa cumplimiento con Claude Vision, genera reportes PDF y dispara alertas automáticas vía n8n.',
       ctaExplore: 'Explorar arquitectura',
